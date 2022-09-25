@@ -1,0 +1,44 @@
+.title0 {
+  font-size: 2.375rem;
+  font-weight: bolder;
+}
+.title1 {
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+.title2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.title3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.title4 {
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.headline {
+  font-size: 1rem;
+}
+.body {
+  font-size: 0.75rem;
+  color: var(--grey3);
+}
+
+.logoL {
+  color: var(--primary);
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+.logoR {
+  color: var(--grey4);
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+.logoRW {
+  color: var(--grey1);
+  font-weight: bolder;
+  font-size: 1.5rem;
+}

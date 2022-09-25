@@ -1,0 +1,61 @@
+.login {
+  background-color: var(--grey4);
+  width: 100vw;
+  height: 100vh;
+  color: var(--grey1);
+  position: relative;
+}
+.loginL {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 2rem;
+  box-sizing: border-box;
+  height: 50%;
+  justify-content: space-around;
+}
+
+.logoR {
+  font-weight: bolder;
+}
+
+.loginR > img {
+  height: 50%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.loginL > button {
+  width: 241px;
+  align-self: center;
+}
+
+@media (min-width: 769px) {
+  .login {
+    display: flex;
+    align-items: center;
+    padding: 0 5rem;
+    box-sizing: border-box;
+    justify-content: center;
+  }
+
+  .loginL {
+    width: 40%;
+  }
+
+  .loginL > h2 {
+    max-width: 347px;
+  }
+
+  .loginR {
+    width: 40%;
+  }
+  .loginR > img {
+    position: relative;
+  }
+  .loginL > button {
+    align-self: flex-start;
+  }
+}

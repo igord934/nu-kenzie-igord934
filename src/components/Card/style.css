@@ -1,0 +1,28 @@
+.cardT {
+  width: 95%;
+  height: 15vh;
+  background-color: var(--grey1);
+  margin: 1rem auto;
+  border-left: 4px solid var(--grey2);
+  box-sizing: border-box;
+  border-radius: 8px;
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.in {
+  border-color: var(--secondary);
+}
+
+.infosT {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+}
+
+.cardT span {
+  font-size: 0.75rem;
+}

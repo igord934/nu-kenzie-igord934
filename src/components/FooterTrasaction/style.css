@@ -1,0 +1,36 @@
+.footerT {
+  margin: 25px auto 0;
+  width: 95%;
+  display: flex;
+  height: 15vh;
+  border: 2px solid var(--grey2);
+  border-radius: 4px;
+  padding: 1.25rem;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 440px;
+  padding: 1rem;
+}
+
+.footerD {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+}
+
+.footerD span {
+  font-size: 0.75rem;
+}
+
+.money {
+  color: var(--primary);
+  font-weight: bold;
+}
+
+@media (min-width: 769px) {
+  .footerT {
+    margin: 50px 0 0;
+  }
+}

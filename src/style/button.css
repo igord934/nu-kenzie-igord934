@@ -1,0 +1,40 @@
+.buttonPrimary {
+  padding: 0.5rem 2.5rem;
+  background-color: var(--primary);
+  border-style: none;
+  border-radius: 8px;
+  color: var(--grey1);
+  cursor: pointer;
+  font-family: "Nunito", sans-serif;
+}
+.buttonPrimary:hover {
+  background-color: var(--primary2);
+}
+
+.buttonDefaut {
+  padding: 0.5rem 0.75rem;
+  font-size: 0.75rem;
+  background-color: var(--grey2);
+  color: var(--grey3);
+  border-style: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: "Nunito", sans-serif;
+}
+.buttonDefaut:hover {
+  background-color: var(--grey3);
+  color: var(--grey1);
+}
+
+.trash {
+  background-color: var(--grey2);
+  color: var(--grey3);
+  cursor: pointer;
+  border-style: none;
+  border-radius: 2px;
+  padding: 5px;
+}
+.trash:hover {
+  background-color: var(--grey3);
+  color: var(--grey1);
+}

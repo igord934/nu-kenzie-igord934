@@ -1,0 +1,41 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  box-shadow: 0 4px 32px -12px #00000040;
+  box-sizing: border-box;
+}
+.headerContainer {
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Active {
+  background-color: var(--primary) !important;
+  color: var(--grey1) !important;
+}
+
+@media (min-width: 769px) {
+  .home {
+    flex-direction: row;
+  }
+  .containerForm {
+    width: 50%;
+  }
+  .containerTrasiction {
+    width: 50%;
+  }
+}
