@@ -3,7 +3,6 @@
   flex-direction: column;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 1.5rem;
   box-sizing: border-box;
 }
 
@@ -31,11 +30,15 @@
 @media (min-width: 769px) {
   .home {
     flex-direction: row;
+    max-width: 80%;
   }
   .containerForm {
     width: 50%;
   }
   .containerTrasiction {
     width: 50%;
+  }
+  .headerContainer {
+    width: 80%;
   }
 }

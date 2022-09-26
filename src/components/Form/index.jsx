@@ -3,7 +3,7 @@ import "./style.css";
 
 function Form({ list, setList }) {
   const [name, setName] = useState("");
-  const [type, setType] = useState("");
+  const [type, setType] = useState("Escolha");
   const [innerValue, setInnerValue] = useState("");
   return (
     <form
@@ -19,6 +19,9 @@ function Form({ list, setList }) {
             ...list,
             { name: name, type: type, innerValue: innerValueFormat },
           ]);
+          setName("");
+          setType("Escolha");
+          setInnerValue("");
         }
       }}
     >
@@ -47,7 +50,11 @@ function Form({ list, setList }) {
         </div>
         <div>
           <label>Tipo de valor</label>
-          <select required onChange={(event) => setType(event.target.value)}>
+          <select
+            value={type}
+            required
+            onChange={(event) => setType(event.target.value)}
+          >
             <option value="Escolha">Escolha</option>
             <option value="Entrada">Entrada</option>
             <option value="Saida">Saida</option>

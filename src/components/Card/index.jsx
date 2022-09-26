@@ -15,11 +15,11 @@ function Card({ transaction, list, setList, index }) {
       <span>R$ {transaction.innerValue},00</span>
       <FaTrash
         className="trash"
-        onClick={() =>
+        onClick={() => {
           setList(
             list.filter((innerTrasaction) => innerTrasaction !== transaction)
-          )
-        }
+          );
+        }}
       ></FaTrash>
     </article>
   );
