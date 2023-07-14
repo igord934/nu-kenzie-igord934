@@ -12,7 +12,7 @@ function Card({ transaction, list, setList, index }) {
         <h2>{transaction.name}</h2>
         <span>{transaction.type}</span>
       </div>
-      <span>R$ {transaction.innerValue},00</span>
+      <span>R$ {transaction.innerValue}</span>
       <FaTrash
         className="trash"
         onClick={() => {

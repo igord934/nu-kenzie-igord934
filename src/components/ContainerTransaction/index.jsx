@@ -2,30 +2,16 @@ import { useState } from "react";
 import ListTransactions from "../ListTransaction";
 import "./style.css";
 
-function ContainerTransaction({ list, setList }) {
-  const [filter, setFilter] = useState("Todos");
-  const [buttonAllClass, setButtonAllClass] = useState("buttonDefaut Active");
-  const [buttonInClass, setButtonInClass] = useState("buttonDefaut");
-  const [buttonOutClass, setButtonOutClass] = useState("buttonDefaut");
-
+function ContainerTransaction({ list, setList, filter, setFilter }) {
   function listIn() {
     setFilter("Entrada");
-    setButtonInClass("buttonDefaut Active");
-    setButtonAllClass("buttonDefaut");
-    setButtonOutClass("buttonDefaut");
   }
 
   function listOut() {
     setFilter("Saida");
-    setButtonOutClass("buttonDefaut Active");
-    setButtonAllClass("buttonDefaut");
-    setButtonInClass("buttonDefaut");
   }
   function listAll() {
     setFilter("Todos");
-    setButtonAllClass("buttonDefaut Active");
-    setButtonOutClass("buttonDefaut");
-    setButtonInClass("buttonDefaut");
   }
 
   return (
@@ -33,13 +19,28 @@ function ContainerTransaction({ list, setList }) {
       <header className="headerTransaction">
         <span className="title3">Resumo financeiro</span>
         <nav className="navBar">
-          <button onClick={listAll} className={buttonAllClass}>
+          <button
+            onClick={listAll}
+            className={
+              filter == "Todos" ? "buttonDefaut Active" : "buttonDefaut"
+            }
+          >
             Todos
           </button>
-          <button onClick={listIn} className={buttonInClass}>
+          <button
+            onClick={listIn}
+            className={
+              filter == "Entrada" ? "buttonDefaut Active" : "buttonDefaut"
+            }
+          >
             Entradas
           </button>
-          <button onClick={listOut} className={buttonOutClass}>
+          <button
+            onClick={listOut}
+            className={
+              filter == "Saida" ? "buttonDefaut Active" : "buttonDefaut"
+            }
+          >
             Saidas
           </button>
         </nav>
