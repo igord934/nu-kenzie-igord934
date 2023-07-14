@@ -6,6 +6,7 @@ import "./style.css";
 
 function Home({ logout }) {
   const [listTransaction, setListTransaction] = useState([]);
+  const [filter, setFilter] = useState("Todos");
   return (
     <div>
       <header className="header">
@@ -22,12 +23,14 @@ function Home({ logout }) {
       <div className="home">
         <section className="containerForm">
           <Form list={listTransaction} setList={setListTransaction} />
-          {listTransaction.length > 0 ? (
+          {listTransaction.length > 0 && (
             <FooterTrasaction list={listTransaction} />
-          ) : null}
+          )}
         </section>
         <aside className="containerTrasiction">
           <ContainerTransaction
+            filter={filter}
+            setFilter={setFilter}
             list={listTransaction}
             setList={setListTransaction}
           />
